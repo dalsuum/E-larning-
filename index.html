@@ -7,6 +7,7 @@
     <title>dalcinsuum</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!-- <nav class="navbar navbar-expand-sm  navbar-light bg-dark  text-light sticky-top">
@@ -51,63 +52,65 @@
         </div>
     </nav> -->
 
-
-
 </head>
 
 <body calss="bg-secondary text-light">
 
+    <!-- Maneu Bar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between sticky-top">
-        <a class="navbar-brand" href="index.html"> <img src="images/dal.png" alt="dalcinsuum" width="40" height="40">Dal
-            Cin Suum</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/dal.png" alt="dalcinsuum" width="40" height="40">
+                Dal Cin Suum
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#course">Course</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#about">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#login" class="nav-link text-light">
-                        <span class="nav-item text-danger badge bg-secondary rounded-pill "></span>
-                        <img id="cart" src="images/cart.jpg" alt="cart" width="25" height="25">
-                    </a>
-                </li> 3
-                </span>
-                <li class="nav-item">
-                    <a class="nav-link " href="#login">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#signup">Signup</a>
-                </li>
-            </ul>
-
-            <div class="form-inline">
-                <form > 
-                    <div class="mb-3 input-group">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">  
-                        <span>
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#course">Course</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#about">Contact</a>
+                        </li>
+                </ul> 
+                
+               
+                <ul class="navbar-nav ms-auto mb-200 mb-lg-0">
+                    <form class="d-flex" > 
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">  
+                        <button class="btn btn-outline-secondary " type="submit">Search</button>
+                    </form>
+                        <li class="nav-item">
+                            <a href="#login" class="nav-link text-light">
+                                <span class="nav-item text-danger badge bg-secondary rounded-pill "></span>
+                               <img id="cart" src="images/cart.jpg" alt="cart" width="25" height="25">
+                            </a>
+                        </li> 3
                         </span>
-                    </div>
-                                  
-                </form>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#signup">Signup</a>
+                        </li>
+                </ul>
+                
             </div>
         </div>
     </nav>
+
+    <!-- Home Page -->
 
     <div class="card text-center text-dark">
         <div id="home" class="card-title">
@@ -127,6 +130,7 @@
         </div>
     </div>
 
+    <!-- Courses -->
 
     <div class="countainer">
         <h3 id="course" class="bg-secondary text-light "> Courses </h3>
@@ -242,9 +246,9 @@
                                 </button>
                                     </a>
                                         </label>
-
-
         </div>
+
+        <!-- About -->
 
         <div>
             <h3 id="about" class="bg-secondary text-light">About</h3>
@@ -269,6 +273,8 @@
             
 
         </div>
+
+        <!-- Contact -->
 
         <div>
             <h3 id="contact" class="bg-secondary text-light">Contact</h3>
@@ -301,6 +307,8 @@
             </form>
         </div>
 
+        <!-- Signup -->
+
         <div>
             <h3 id="signup" class="bg-secondary text-light">Signup</h3>
             <form action="">
@@ -332,6 +340,8 @@
             </form>
         </div>
 
+        <!-- Login -->
+
         <div>
             <h3 id="login" class="bg-secondary text-light">Login</h3>
             <form action="">
@@ -350,6 +360,8 @@
             </form>
         </div>
 </body>
+
+    <!-- Footer -->
 
 <footer id="footer" class="bg-dark text-light">
     <p>Copyright &copy; DalCinSuum &trade;</p>
