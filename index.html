@@ -7,8 +7,12 @@
     <title>dalcinsuum</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/99c06c0cef.js" crossorigin="anonymous"></script>
+
+   
+
 
     <!-- <nav class="navbar navbar-expand-sm  navbar-light bg-dark  text-light sticky-top">
         
@@ -37,8 +41,8 @@
                
                 <li class="nav-item">
                     <a href="#login" class="nav-link text-light"> 
-                        <span class="nav-item text-danger badge bg-secondary rounded-pill "></span> 
-                            <img id="cart" src="images/cart.jpg" alt="cart" width="25" height="25">
+                        <span class="nav-item text-danger badge bg-secondary rounded-pill position-absolute top-0 left-100 translate-middle "></span> 
+                            <img id="cart" src="images/cart.jpg" alt="cart" position-relative width="25" height="25">
                                 </a>
                                     </li> 3  
                                             </span>
@@ -61,7 +65,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="images/dal.png" alt="dalcinsuum" width="40" height="40">
+                <img class="my=2" src="images/dal.png" alt="dalcinsuum" width="40" height="40" >
                 Dal Cin Suum
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
@@ -83,23 +87,20 @@
                         <li class="nav-item">
                             <a class="nav-link " href="#about">Contact</a>
                         </li>
-                </ul> 
-                
-               
+                </ul>                
                 <ul class="navbar-nav ms-auto mb-200 mb-lg-0">
                     <form class="d-flex" > 
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">  
                         <button class="btn btn-outline-secondary " type="submit">Search</button>
                     </form>
-                        <li class="nav-item">
+                        <li class="nav-item mr-5">
                             <a href="#login" class="nav-link text-light">
-                                <span class="nav-item text-danger badge bg-secondary rounded-pill "></span>
-                               <img id="cart" src="images/cart.jpg" alt="cart" width="25" height="25">
+                                <i class="fas fa-shopping-cart position-relative mr-5"></i>
+                                <span class="nav-item text-danger badge bg-secondary rounded-pill position-absolute top-auto left-100 mr-5" >3</span>                                
                             </a>
-                        </li> 3
-                        </span>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#login">Login</a>
+                        </li>
+                            <li class="nav-item ml-5">
+                            <a class="nav-link ml-5 " href="#login">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#signup">Signup</a>
@@ -111,263 +112,305 @@
     </nav>
 
     <!-- Home Page -->
-
-    <div class="card text-center text-dark">
-        <div id="home" class="card-title">
-            <h2>Welcome</h2>
+    <main>
+        <div class="container-fluid card text-center text-dark">
+                <div id="carouselExampleControls" class="carousel slide mb-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/slide1.jpg" class="d-block h-100 w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/slide2.jpg" class="d-block h-100 w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/slide3.jpg" class="d-block h-100 w-100" alt="...">
+                            </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+            <div id="home" class="card-title">
+                <h2 class="text-dark py-2">Welcome</h2>
+            </div>
+            <div class="card-body">
+                <img src="images/man.jpg" class="rounded" alt="man" width="150" height="150">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quas labore, id
+                        minus quia expedita. Cum fugit veniam, autem repellat, eligendi odio quia debitis magni voluptas
+                        animi illo vero esse!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsa possimus ratione unde doloribus
+                        neque accusantium quam soluta iure! Quasi expedita, soluta provident facere cupiditate mollitia
+                        quidem reprehenderit dolorem magni!
+                    </p>
+                </blockquote>
+            </div>
         </div>
-        <div class="card-body">
-            <img src="images/man.jpg" class="rounded" alt="man" width="150" height="150">
-            <blockquote class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quas labore, id
-                    minus quia expedita. Cum fugit veniam, autem repellat, eligendi odio quia debitis magni voluptas
-                    animi illo vero esse!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsa possimus ratione unde doloribus
-                    neque accusantium quam soluta iure! Quasi expedita, soluta provident facere cupiditate mollitia
-                    quidem reprehenderit dolorem magni!
+
+        <!-- Courses -->
+
+        <div class="container mt-2">
+            <h3 id="course" class="bg-secondary text-light py-2"> Courses </h3>
+            <div class="row">
+                <div class="card  text-dark col">
+                    <div class="card-header">
+                        <strong>Computer Basic</strong>
+                        <!-- "span" element will show the Students count of taken course. -->
+                        <span class="badge bg-secondary text-light rounded-pill">50 Students</span>
+                    </div>
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-4x ml-50 mr-50"></i>
+                        <!-- <img src="images/course.png" class="rounded mx-auto d-block " alt="course" width="100" height="100"> -->
+                        <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, alias, consequatur expedita
+                        deleniti
+                        delectus eum rerum nostrum corrupti quae, laudantium hic. Saepe ipsa dicta ratione tempora
+                        accusantium
+                        laboriosam autem cum.
+                        </p>
+                    </div> 
+                            <button class="btn btn-outline-dark d-inline">
+                                <a href="#" class="btn btn-outline-secondary" aria-label="Preview">
+                                    <i class="fa fa-play float-right " aria-hidden="true"></i>
+                                </a>
+                                Preview</button>
+                            <button class="btn btn-outline-dark ml-4">
+                                <a href="#" class="btn btn-outline-secondary" aria-label="View items in your shopping cart">
+                                    <i class="fa fa-shopping-cart " aria-hidden="true"></i>
+                                </a>
+                            Add to buy
+                            </button>
+                </div>                     
+                
+                <div class="card  text-dark col">
+                    <div class="card-header">
+                        <strong>Cloud Computing</strong>
+                        <!-- "span" element will show the Students count of taken course. -->
+                        <span class="badge bg-secondary text-light rounded-pill">50 Students</span>
+                    </div>
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-4x ml-50 mr-50"></i>
+                        <!-- <img src="images/course.png" class="rounded mx-auto d-block " alt="course" width="100" height="100"> -->
+                        <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, alias, consequatur expedita
+                        deleniti
+                        delectus eum rerum nostrum corrupti quae, laudantium hic. Saepe ipsa dicta ratione tempora
+                        accusantium
+                        laboriosam autem cum.
+                        </p>
+                    </div> 
+                            <button class="btn btn-outline-dark d-inline">
+                                <a href="#" class="btn btn-outline-secondary" aria-label="Preview">
+                                    <i class="fa fa-play float-right " aria-hidden="true"></i>
+                                </a>
+                                Preview</button>
+                            <button class="btn btn-outline-dark ml-4">
+                                <a href="#" class="btn btn-outline-secondary" aria-label="View items in your shopping cart">
+                                    <i class="fa fa-shopping-cart " aria-hidden="true"></i>
+                                </a>
+                            Add to buy
+                            </button>
+                </div>
+            </div>
+            <div class="countainer row">
+                <div class="card text-dark col">
+                    <div class="card-header">
+                        <strong>Electronic</strong>
+                        <!-- "span" element will show the Students count of taken course. -->
+                        <span class="badge bg-secondary text-light rounded-pill">50 Students</span>
+                    </div>
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-4x ml-50 mr-50"></i>
+                        <!-- <img src="images/course.png" class="rounded mx-auto d-block " alt="course" width="100" height="100"> -->
+                        <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, alias, consequatur expedita
+                        deleniti
+                        delectus eum rerum nostrum corrupti quae, laudantium hic. Saepe ipsa dicta ratione tempora
+                        accusantium
+                        laboriosam autem cum.
+                        </p>
+                    </div> 
+                            <button class="btn btn-outline-dark d-inline">
+                                <a href="#" class="btn btn-outline-secondary" aria-label="Preview">
+                                    <i class="fa fa-play float-right " aria-hidden="true"></i>
+                                </a>
+                                Preview</button>
+                            <button class="btn btn-outline-dark ml-4">
+                                <a href="#" class="btn btn-outline-secondary" aria-label="View items in your shopping cart">
+                                    <i class="fa fa-shopping-cart " aria-hidden="true"></i>
+                                </a>
+                            Add to buy
+                            </button>
+                </div>
+
+                <div class="card text-dark col">
+                    <div class="card-header">
+                        <strong>Electronic</strong>
+                        <!-- "span" element will show the Students count of taken course. -->
+                        <span class="badge bg-secondary text-light rounded-pill">50 Students</span>
+                    </div>
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-4x ml-50 mr-50"></i>
+                        <!-- <img src="images/course.png" class="rounded mx-auto d-block " alt="course" width="100" height="100"> -->
+                        <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, alias, consequatur expedita
+                        deleniti
+                        delectus eum rerum nostrum corrupti quae, laudantium hic. Saepe ipsa dicta ratione tempora
+                        accusantium
+                        laboriosam autem cum.
+                        </p>
+                    </div> 
+                            <button class="btn btn-outline-dark d-inline">
+                                <a href="#" class="btn btn-outline-secondary" aria-label="Preview">
+                                    <i class="fa fa-play float-right " aria-hidden="true"></i>
+                                </a>
+                                Preview</button>
+                            <button class="btn btn-outline-dark ml-4">
+                                <a href="#" class="btn btn-outline-secondary" aria-label="View items in your shopping cart">
+                                    <i class="fa fa-shopping-cart " aria-hidden="true"></i>
+                                </a>
+                            Add to buy
+                            </button>
+                </div>
+
+                <label class="text-left form-text">
+                    If you intersted the course, Please register 
+                        <button class="btn btn-outline-dark btn-sm">
+                            <a href="#signup">
+                                here.
+                                    </button>
+                                        </a>
+                                            </label>
+                <label class="text-left form-text">
+                    If you already regsitered, login 
+                        <button class="btn btn-outline-dark btn-sm">
+                            <a href="#login">
+                                here.
+                                    </button>
+                                        </a>
+                                            </label>
+            </div>
+
+            <!-- About -->
+
+            <div class="container">
+                <h3 id="about" class="bg-secondary text-light p-2">About</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni modi itaque velit quia reiciendis!
+                    Delectus, doloribus? Architecto dolor, atque minus, est nemo natus, optio amet reiciendis excepturi
+                    laudantium praesentium.
                 </p>
-            </blockquote>
-        </div>
-    </div>
-
-    <!-- Courses -->
-
-    <div class="countainer">
-        <h3 id="course" class="bg-secondary text-light "> Courses </h3>
-        <div class="row">
-            <div class="card  text-dark col">
-                <div class="card-header">
-                    <strong>Computer Basic</strong>
-                    <!-- "span" element will show the Students count of taken course. -->
-                    <span class="badge bg-secondary text-light rounded-pill">50 Students</span>
-                </div>
-                <div class="card-body">
-                    <img src="images/course.png" class="rounded mx-auto d-block " alt="course" width="100" height="100">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, alias, consequatur expedita
-                    deleniti
-                    delectus eum rerum nostrum corrupti quae, laudantium hic. Saepe ipsa dicta ratione tempora
-                    accusantium
-                    laboriosam autem cum.
-                </div>
-                <button class="btn btn-outline-dark">Add to buy</button>
-
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam repellat eius, necessitatibus
+                    delectus
+                    odit a blanditiis facere hic voluptates adipisci animi minus ab voluptate iure suscipit aliquam
+                    reiciendis
+                    porro.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugit facere pariatur id nisi velit
+                    exercitationem, error, quibusdam vitae provident non, reiciendis necessitatibus et sapiente corrupti
+                    laudantium quod odio porro.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum atque necessitatibus, iusto facere
+                    tenetur commodi saepe? Aliquam molestiae eius assumenda commodi delectus amet exercitationem est eos
+                    dolorum iure, quo velit!
+                </p>
             </div>
-            <div class="card  text-dark col">
-                <div class="card-header">
-                    <strong>Basic Network</strong>
-                    <span class="badge bg-secondary text-light rounded-pill ">20 Students</span>
-                </div>
-                <div class="card-body">
-                    <img src="images/course.png" class="rounded mx-auto d-block " alt="course" width="100" height="100">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda neque, quis mollitia, eum earum
-                    quos,
-                    optio quisquam voluptas reprehenderit accusamus similique nemo fugiat! Magnam officia nemo, fugit
-                    illum
-                    impedit sequi!
-                </div>
-                <button class="btn btn-outline-dark">Add to buy</button>
+
+            <!-- Contact -->
+
+            <div class="container">
+                <h3 id="contact" class="bg-secondary text-light p-2">Contact</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni modi itaque velit quia reiciendis!
+                    Delectus, doloribus? Architecto dolor, atque minus, est nemo natus, optio amet reiciendis excepturi
+                    laudantium praesentium.
+                </p>
+                <form action="">
+                    <label for="name">Your Name</label>
+                    <div class="mb-3 input-group">
+                        <input type="text" id="name" class="form-control">
+                    </div>
+                    <label for="email">Your E-mail</label>
+                    <div class="mb-3 input-group">
+                        <input type="email" id="email" class="form-control">
+                    </div>
+                    <label for="phone">Your Phone Number</label>
+                    <div class="mb3 input-group">
+                        <input type="tel" id="phone" class="form-control">
+                    </div>
+                    <label for="text">Type here</label>
+                    <div class="mb-3 input-group">
+                        <input type="texarea" id="text" class="form-control">
+                    </div>
+                    <div class="mb-3 input-group">
+                        <button class="btn btn-outline-dark">Send</button>
+                    </div>
+                </form>
             </div>
-            <div class="card  text-dark col">
-                <div class="card-header">
-                    <strong>Cloud Computing</strong>
-                    <span class="badge bg-secondary text-light rounded-pill">100 Students</span>
-                </div>
-                <div class="card-body">
-                    <img src="images/course.png" class="rounded mx-auto d-block " alt="course" width="100" height="100">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda neque, quis mollitia, eum earum
-                    quos,
-                    optio quisquam voluptas reprehenderit accusamus similique nemo fugiat! Magnam officia nemo, fugit
-                    illum
-                    impedit sequi!
-                </div>
-                <button class="btn btn-outline-dark">Add to buy</button>
+
+            <!-- Signup -->
+
+            <div class="container">
+                <h3 id="signup" class="bg-secondary text-light p-2">Signup</h3>
+                <form action="">
+                    <label for="name">Your Name</label>
+                    <div class="mb-3 input-group">
+                        <input type="text" id="name" class="form-control">
+                    </div>
+                    <label for="email">Your E-mail</label>
+                    <div class="mb-3 input-group">
+                        <input type="text" id="email" class="form-control">
+                    </div>
+                    <label for="password">Your Password</label>
+                    <div class="mb-3 input-group">
+                        <input type="password" id="password" class="form-control">
+                    </div>
+                    <label for="phone">Your Phone Number</label>
+                    <div class="mb-3 input-group">
+                        <input type="tel" id="phone" class="form-control">
+                    </div>
+                    <label for="gender">Gender</label>
+                    <div class="mb-3 input-group">
+                        <select name="" id="gender" class="form-control">
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <button class="btn btn-outline-dark">signup</button>
+                </form>
             </div>
-        </div>
-        <div class="row">
-            <div class="card text-dark col">
-                <div class="card-header">
-                    <strong>Programming</strong>
-                    <span class="badge bg-secondary text-light rounded-pill">100 Students</span>
-                </div>
-                <div class="card-body">
-                    <img src="images/course.png" class="rounded mx-auto d-block " alt="course" width="100" height="100">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda neque, quis mollitia, eum earum
-                    quos,
-                    optio quisquam voluptas reprehenderit accusamus similique nemo fugiat! Magnam officia nemo, fugit
-                    illum
-                    impedit sequi!
-                </div>
-                <button class="btn btn-outline-dark">Add to buy</button>
+
+            <!-- Login -->
+
+            <div class="container">
+                <h3 id="login" class="bg-secondary text-light p-2 ">Login</h3>
+                <form action="">
+                    <label for="user">User Name</label>
+                    <div class="mb-3 input-group">
+                        <input type="text" id="user" class="form-control">
+                    </div>
+                    <label for="password">Your Password</label>
+                    <div class="mb-3 input-group">
+                        <input type="password" id="password" class="form-control">
+                    </div>
+                    <div class="form-text"><a href="#contact">Forgot Password</a></div>
+                    <div class="mb-3 input-group">
+                        <button class="btn btn-outline-dark">Login</button>
+                    </div>
+                </form>
             </div>
-            <div class="card  text-dark col">
-                <div class="card-header">
-                    <strong>Electronic</strong>
-                    <span class="badge bg-secondary text-light rounded-pill">100 Students</span>
-                </div>
-                <div class="card-body">
-                    <img src="images/course.png" class="rounded mx-auto d-block " alt="course" width="100" height="100">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda neque, quis mollitia, eum earum
-                    quos,
-                    optio quisquam voluptas reprehenderit accusamus similique nemo fugiat! Magnam officia nemo, fugit
-                    illum
-                    impedit sequi!
-                </div>
-                <button class="btn btn-outline-dark">Add to buy</button>
-            </div>
-            <div class="card  text-dark col">
-                <div class="card-header">
-                    <strong>Arduino</strong>
-                    <span class="badge bg-secondary text-light rounded-pill">100 Students</span>
-                </div>
-                <div class="card-body">
-                    <img src="images/course.png" class="rounded mx-auto d-block " alt="course" width="100" height="100">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda neque, quis mollitia, eum earum
-                    quos,
-                    optio quisquam voluptas reprehenderit accusamus similique nemo fugiat! Magnam officia nemo, fugit
-                    illum
-                    impedit sequi!
-                </div>
-                <button class="btn btn-outline-dark">Add to buy</button>
-
-            </div>
-            <label class="text-left form-text">
-                If you intersted the course, Please register 
-                    <button class="btn btn-outline-dark btn-sm">
-                        <a href="#signup">
-                            here.
-                                </button>
-                                    </a>
-                                        </label>
-            <label class="text-left form-text">
-                If you already regsitered, login 
-                    <button class="btn btn-outline-dark btn-sm">
-                        <a href="#login">
-                            here.
-                                </button>
-                                    </a>
-                                        </label>
-        </div>
-
-        <!-- About -->
-
-        <div>
-            <h3 id="about" class="bg-secondary text-light">About</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni modi itaque velit quia reiciendis!
-                Delectus, doloribus? Architecto dolor, atque minus, est nemo natus, optio amet reiciendis excepturi
-                laudantium praesentium.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam repellat eius, necessitatibus
-                delectus
-                odit a blanditiis facere hic voluptates adipisci animi minus ab voluptate iure suscipit aliquam
-                reiciendis
-                porro.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugit facere pariatur id nisi velit
-                exercitationem, error, quibusdam vitae provident non, reiciendis necessitatibus et sapiente corrupti
-                laudantium quod odio porro.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum atque necessitatibus, iusto facere
-                tenetur commodi saepe? Aliquam molestiae eius assumenda commodi delectus amet exercitationem est eos
-                dolorum iure, quo velit!
-            </p>
-            
-
-        </div>
-
-        <!-- Contact -->
-
-        <div>
-            <h3 id="contact" class="bg-secondary text-light">Contact</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni modi itaque velit quia reiciendis!
-                Delectus, doloribus? Architecto dolor, atque minus, est nemo natus, optio amet reiciendis excepturi
-                laudantium praesentium.
-            </p>
-            <form action="">
-                <label for="name">Your Name</label>
-                <div class="mb-3 input-group">
-                    <input type="text" id="name" class="form-control">
-                </div>
-                <label for="email">Your E-mail</label>
-                <div class="mb-3 input-group">
-                    <input type="email" id="email" class="form-control">
-                </div>
-                <label for="phone">Your Phone Number</label>
-                <div class="mb3 input-group">
-                    <input type="tel" id="phone" class="form-control">
-                </div>
-                <label for="text">Type here</label>
-                <div class="mb-3 input-group">
-                    <input type="texarea" id="text" class="form-control">
-                </div>
-
-                <div class="mb-3 input-group">
-                    <button class="btn btn-outline-dark">Send</button>
-                </div>
-            </form>
-        </div>
-
-        <!-- Signup -->
-
-        <div>
-            <h3 id="signup" class="bg-secondary text-light">Signup</h3>
-            <form action="">
-                <label for="name">Your Name</label>
-                <div class="mb-3 input-group">
-                    <input type="text" id="name" class="form-control">
-                </div>
-                <label for="email">Your E-mail</label>
-                <div class="mb-3 input-group">
-                    <input type="text" id="email" class="form-control">
-                </div>
-                <label for="password">Your Password</label>
-                <div class="mb-3 input-group">
-                    <input type="password" id="password" class="form-control">
-                </div>
-                <label for="phone">Your Phone Number</label>
-                <div class="mb-3 input-group">
-                    <input type="tel" id="phone" class="form-control">
-                </div>
-                <label for="gender">Gender</label>
-                <div class="mb-3 input-group">
-                    <select name="" id="gender" class="form-control">
-                        <option value="">Male</option>
-                        <option value="">Female</option>
-                    </select>
-                </div>
-                <div class="mb-3 input-group">
-                    <button class="btn btn-outline-dark">signup</button>
-            </form>
-        </div>
-
-        <!-- Login -->
-
-        <div>
-            <h3 id="login" class="bg-secondary text-light">Login</h3>
-            <form action="">
-                <label for="user">User Name</label>
-                <div class="mb-3 input-group">
-                    <input type="text" id="user" class="form-control">
-                </div>
-                <label for="password">Your Password</label>
-                <div class="mb-3 input-group">
-                    <input type="password" id="password" class="form-control">
-                </div>
-                <div class="form-text"><a href="#contact">Forgot Password</a></div>
-                <div class="mb-3 input-group">
-                    <button class="btn btn-outline-dark">Login</button>
-                </div>
-            </form>
-        </div>
+    </main>
 </body>
 
     <!-- Footer -->
 
-<footer id="footer" class="bg-dark text-light">
-    <p>Copyright &copy; DalCinSuum &trade;</p>
-    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error esse possimus similique
-        deleniti placeat iure amet
-        vel alias delectus dolores quisquam, quam accusamus eum officiis hic! A eum id aliquid.</p>
-</footer>
+    <footer id="footer" class="container-fluid bg-dark py-4 text-muted"  >
+        <p>Copyright &copy; DalCinSuum &trade;</p>
+        <i class="fab fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube"></i>
+        <i class="fab fa-linkedin"></i>
+    </footer>
+
 
 </html>
